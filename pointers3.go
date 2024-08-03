@@ -13,6 +13,7 @@ func square(thing2 *[5]float64) {
 	fmt.Printf("\nThe memeory location of thing2 array is: %p", thing2)
 
 	fmt.Printf("\nThe thing2 is of type: %T", thing2)
+	fmt.Printf("\nThe thing2 is: %v", *thing2)
 
 	for i := range thing2 {
 		thing2[i] *= thing2[i]
