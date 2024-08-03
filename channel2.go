@@ -36,8 +36,8 @@ func checkChickenPrices(website string, chickenChannel chan string) {
 func checkTofuPrices(website string, tofuChannel chan string) {
 	for {
 		time.Sleep(time.Second * 1)
-		var chickenPrices = rand.Float32() * 20
-		if chickenPrices <= MAX_CHICKEN_PRICE {
+		var tofuPrices = rand.Float32() * 20
+		if tofuPrices <= MAX_TOFU_PRICE {
 			tofuChannel <- website
 			break
 		}
