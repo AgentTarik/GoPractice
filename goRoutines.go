@@ -40,6 +40,6 @@ func save(result string) {
 
 func log() {
 	m.RLock()
-	fmt.Printf("\nThe current results are: %v", results)
+	fmt.Printf("The current results are: %v\n", results)
 	m.RUnlock()
 }
